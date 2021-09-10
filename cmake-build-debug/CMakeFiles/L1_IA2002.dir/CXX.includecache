@@ -6,9 +6,27 @@
 
 #IncludeRegexTransform: 
 
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Character.cpp
+Character.h
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Character.h
+
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Character.h
+Game.h
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Game.h
+iomanip
+-
+
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Game.cpp
+Game.h
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Game.h
+
 /Users/yerasylamanbek/CLionProjects/L1_IA2002/Game.h
 iostream
 -
+string
+-
+Character.h
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Character.h
 
 /Users/yerasylamanbek/CLionProjects/L1_IA2002/main.cpp
 Game.h

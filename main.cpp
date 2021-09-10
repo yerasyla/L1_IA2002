@@ -5,12 +5,10 @@ int main() {
 
     Game game;
 
-    while (game.playing) {
+    while (game.isPlaying()) {
         game.mainMenu();
     }
 
 
-
-    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
