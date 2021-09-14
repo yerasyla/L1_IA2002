@@ -8,7 +8,7 @@ Character::Character() {
     Atk = 0;
     level = 0;
     exp= 0;
-    expNext = 0;
+    //item = Item();
     //Create initial character
 }
 
@@ -19,21 +19,32 @@ void Character::createCharacter(string name){
     Atk = 1;
     level = 1;
     exp= 0;
-    expNext = 10*level;
 }
 
 string Character::toStringStats() {
     string string1;
     string1 = "Name "+getName()+"\n"+"HP "+ to_string(getHp()) + "/"+to_string(getMaxHp())+"\n"+
-            +"Atk "+to_string(getAtk())+"\n"+"Level "+to_string(getLevel())+"\n"+"Exp "+to_string(getExp())+"\n"+
-            + "Exp till level up "+to_string(getExpNext());
+            +"Atk "+to_string(getAtk())+"\n"+"Level "+to_string(getLevel())+"\n"+"Exp "+to_string(getExp())+"\n"
+            +"Inventory: "+item.getName()+" "+ to_string(item.getAtk())+"\n";
 
     return string1;
 
 }
 
 
+void Character::gainExp(int exp){
+    //this->exp = this->exp +exp;
+    setExp(getExp() +exp);
+    //cout<<"Exp debug: "+this->exp;
+    if (this->exp >= 10*level){
+        level++;
+        this->exp=0;
+        maxHP = maxHP+5;
+        HP = maxHP;
+        Atk = Atk+1;
+    }
 
+}
 
 
 const string &Character::getName() const {
@@ -84,10 +95,6 @@ void Character::setExp(int exp) {
     Character::exp = exp;
 }
 
-double Character::getExpNext() const {
-    return expNext;
+void Character::setItem(const Item &item) {
+    Character::item = item;
 }
-
-void Character::setExpNext(double expNext) {
-    Character::expNext = expNext;
-};

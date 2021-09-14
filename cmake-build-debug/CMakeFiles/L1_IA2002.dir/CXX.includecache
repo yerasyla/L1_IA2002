@@ -11,10 +11,14 @@ Character.h
 /Users/yerasylamanbek/CLionProjects/L1_IA2002/Character.h
 
 /Users/yerasylamanbek/CLionProjects/L1_IA2002/Character.h
-Game.h
-/Users/yerasylamanbek/CLionProjects/L1_IA2002/Game.h
+Item.h
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Item.h
 iomanip
 -
+
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Game.cpp
+Game.h
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Game.h
 
 /Users/yerasylamanbek/CLionProjects/L1_IA2002/Game.h
 iostream
@@ -23,4 +27,14 @@ string
 -
 Character.h
 /Users/yerasylamanbek/CLionProjects/L1_IA2002/Character.h
+Item.h
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Item.h
+
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Item.h
+string
+-
+
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/main.cpp
+Game.h
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Game.h
 

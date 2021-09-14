@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include "Character.h"
+#include "Item.h"
 using namespace std;
 
 class Game {

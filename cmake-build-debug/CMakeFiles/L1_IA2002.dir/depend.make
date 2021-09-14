@@ -4,12 +4,17 @@
 CMakeFiles/L1_IA2002.dir/Character.cpp.o: \
  ../Character.cpp \
  ../Character.h \
- ../Game.h
+ ../Item.h
 CMakeFiles/L1_IA2002.dir/Game.cpp.o: \
  ../Character.h \
  ../Game.cpp \
- ../Game.h
+ ../Game.h \
+ ../Item.h
+CMakeFiles/L1_IA2002.dir/Item.cpp.o: \
+ ../Item.cpp \
+ ../Item.h
 CMakeFiles/L1_IA2002.dir/main.cpp.o: \
  ../Character.h \
  ../Game.h \
+ ../Item.h \
  ../main.cpp

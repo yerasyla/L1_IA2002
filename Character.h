@@ -1,16 +1,19 @@
 #ifndef L1_IA2002_CHARACTER_H
 #define L1_IA2002_CHARACTER_H
-#include "Game.h"
+
+//#include "Game.h"
+#include "Item.h"
 #include <iomanip>
 using namespace std;
+
 
 
 class Character {
 public:
     Character();
-
     void createCharacter(string name);
     string toStringStats();
+    void gainExp(int exp);
 
 public:
     const string &getName() const;
@@ -47,11 +50,15 @@ private:
     int Atk;
     int level;
     int exp;
-    double expNext;
+    Item item;
+
+
 public:
     double getExpNext() const;
 
     void setExpNext(double expNext);
+
+    void setItem(const Item &item);
 };
 
 
