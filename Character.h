@@ -10,7 +10,7 @@ public:
     Character();
 
     void createCharacter(string name);
-    void showStats();
+    string toStringStats();
 
 public:
     const string &getName() const;

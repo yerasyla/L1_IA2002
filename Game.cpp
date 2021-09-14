@@ -1,12 +1,15 @@
 #include "Game.h"
 
+
+Character character;
 Game::Game(){
     //start
     choice = 0;
     playing = true;
 
 };
-Character character;
+
+
 void Game::mainMenu() {
     cout<<"Main Menu"<< endl;
     cout<<"1: Start"<< endl;
@@ -41,13 +44,12 @@ void Game::startMenu() {
         case 0: {playing = false;
             break;}
         case 1:  break;
-        case 2: {character.showStats();
+        case 2: {
+            cout<<character.toStringStats()<<endl;
             break;}
         default: break;
     }
 }
-
-
 
 int Game::getChoice() const
 {

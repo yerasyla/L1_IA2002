@@ -19,19 +19,16 @@ void Character::createCharacter(string name){
     Atk = 1;
     level = 1;
     exp= 0;
-    expNext = 10*level*level;
-
-
+    expNext = 10*level;
 }
 
-void Character::showStats() {
-    cout<<"Name "<<getName()<<endl;
-    cout<<"HP "<<getHp()<<"/"<<getMaxHp()<<endl;
-    cout<<"Atk "<<getAtk()<<endl;
-    cout<<"Level "<<getLevel()<<endl;
-    cout<<"Exp "<<getExp() <<endl;
-    cout<<"Exp till level up "<<getExpNext() <<endl;
-    cout<<setw(10)<<setfill('=')<<endl;
+string Character::toStringStats() {
+    string string1;
+    string1 = "Name "+getName()+"\n"+"HP "+ to_string(getHp()) + "/"+to_string(getMaxHp())+"\n"+
+            +"Atk "+to_string(getAtk())+"\n"+"Level "+to_string(getLevel())+"\n"+"Exp "+to_string(getExp())+"\n"+
+            + "Exp till level up "+to_string(getExpNext());
+
+    return string1;
 
 }
 
