@@ -6,7 +6,7 @@ using namespace std;
 class Item {
 public:
     Item();
-    Item(string name, int Atk);
+    Item(string name, int Atk, string category);
 
     const string &getName() const;
 
@@ -15,6 +15,9 @@ public:
 private:
     string name;
     int Atk;
+    string category;
+public:
+    const string &getCategory() const;
 
 };
 

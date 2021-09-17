@@ -52,7 +52,7 @@ private:
     int Atk;
     int level;
     int exp;
-    Item item[3];
+    Item item[3];//slot 0 weapon, slot 1 armor, slot 2 legs
 
 public:
     double getExpNext() const;

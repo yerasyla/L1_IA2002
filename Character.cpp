@@ -104,6 +104,21 @@ void Character::setExp(int exp) {
     Character::exp = exp;
 }
 
-void Character::lootItem(Item itemReceived){
+void Character::lootItem(Item itemReceived){//slot 0 weapon, slot 1 armor, slot 2 legs
 
+    int slot;
+    if (itemReceived.getCategory()=="Weapon"){
+        slot = 0;
+    }
+    if (itemReceived.getCategory()=="Armor"){
+        slot = 1;
+    }
+    if (itemReceived.getCategory()=="Legs"){
+        slot = 2;
+    }
+
+    if (item[slot].getAtk()>itemReceived.getAtk()){
+        return;
+    }
+    item[slot] = itemReceived;
 };

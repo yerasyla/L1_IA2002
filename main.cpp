@@ -3,7 +3,7 @@
 //Fight system
 //Enemy class
 
-
+int countChoices;
 int main() {
 
     Game game;

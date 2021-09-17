@@ -1,5 +1,6 @@
 #include "Game.h"
 
+extern int countChoices;
 
 Character character;
 Game::Game(){
@@ -11,12 +12,13 @@ Game::Game(){
 
 
 void Game::mainMenu() {
+    cout<<"Number of choices: "<<countChoices<<endl;
     cout<<"Main Menu"<< endl;
     cout<<"1: Start"<< endl;
     cout<<"0: Exit"<< endl;
 
     cout<<"Choice: ";
-    cin>>choice;
+    cin>>choice; countChoices++;
     switch(choice){
         case 0: {playing = false;
             break;}
@@ -41,21 +43,26 @@ void Game::startMenu() {
         cout << "0: Go to main menu" << endl;
 
         cout << "Choice: ";
-        cin >> choice;
+        cin >> choice;countChoices++;
         switch (choice) {
             case 0:
                 break;
             case 1: {
-                Item item("Wooden Sword", 1);
-                //character.setItem(item);
-                character.gainExp(10);
+                Fight fight;
+                Enemy enemy("Troll", 5, 5,1);
+                fight.startFight(character, enemy);
+
                 break;
             }
             case 2: {
+
                 cout << character.toStringStats() << endl;
                 break;
             }
             default:
+                //Item item2("Secret sword", 10, "Weapon");
+                Item item2("Plate", 10, "Armor");
+                character.lootItem(item2);
                 break;
         }
     }

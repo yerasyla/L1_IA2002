@@ -6,14 +6,26 @@
 
 #IncludeRegexTransform: 
 
-/Users/yerasylamanbek/CLionProjects/L1_IA2002/Character.cpp
-Character.h
-/Users/yerasylamanbek/CLionProjects/L1_IA2002/Character.h
-
 /Users/yerasylamanbek/CLionProjects/L1_IA2002/Character.h
 Item.h
 /Users/yerasylamanbek/CLionProjects/L1_IA2002/Item.h
 iomanip
+-
+
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Enemy.h
+string
+-
+
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Fight.cpp
+Fight.h
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Fight.h
+
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Fight.h
+Character.h
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Character.h
+Enemy.h
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/Enemy.h
+iostream
 -
 
 /Users/yerasylamanbek/CLionProjects/L1_IA2002/Item.h

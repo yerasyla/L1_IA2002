@@ -5,9 +5,10 @@ Item::Item() {
     this->Atk = 0;
 }
 
-Item::Item(string name, int Atk) {
+Item::Item(string name, int Atk, string category) {
     this->name = name;
     this->Atk = Atk;
+    this->category = category;
 }
 
 const string &Item::getName() const {
@@ -16,4 +17,8 @@ const string &Item::getName() const {
 
 int Item::getAtk() const {
     return Atk;
+}
+
+const string &Item::getCategory() const {
+    return category;
 }

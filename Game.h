@@ -4,6 +4,7 @@
 #include <string>
 #include "Character.h"
 #include "Item.h"
+#include "Fight.h"
 using namespace std;
 
 class Game {
