@@ -24,8 +24,17 @@ void Character::createCharacter(string name){
 string Character::toStringStats() {
     string string1;
     string1 = "Name "+getName()+"\n"+"HP "+ to_string(getHp()) + "/"+to_string(getMaxHp())+"\n"+
-            +"Atk "+to_string(getAtk())+"\n"+"Level "+to_string(getLevel())+"\n"+"Exp "+to_string(getExp())+"\n"
-            +"Inventory: "+item.getName()+" "+ to_string(item.getAtk())+"\n";
+            +"Atk "+to_string(getAtk())+"\n"+"Level "+to_string(getLevel())+"\n"+"Exp "+to_string(getExp())+"\n";
+            //+"Inventory: "+item[0].getName()+" "+ to_string(item[0].getAtk())+"\n";//
+    string1=string1+ "Inventory: \n";
+    for (int i = 0; i < 3; i++) {
+        if (item[i].getName() != "Test") {
+            string1 += item[i].getName() + " " + to_string(item[i].getAtk()) + "\n";
+        }
+    }
+
+
+
 
     return string1;
 
@@ -95,6 +104,6 @@ void Character::setExp(int exp) {
     Character::exp = exp;
 }
 
-void Character::setItem(const Item &item) {
-    Character::item = item;
-}
+void Character::lootItem(Item itemReceived){
+
+};

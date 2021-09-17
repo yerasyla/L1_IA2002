@@ -43,6 +43,8 @@ public:
 
     void setExp(int exp);
 
+    void lootItem(Item item);
+
 private:
     string name;
     int HP;
@@ -50,15 +52,13 @@ private:
     int Atk;
     int level;
     int exp;
-    Item item;
-
+    Item item[3];
 
 public:
     double getExpNext() const;
 
     void setExpNext(double expNext);
 
-    void setItem(const Item &item);
 };
 
 

@@ -47,7 +47,7 @@ void Game::startMenu() {
                 break;
             case 1: {
                 Item item("Wooden Sword", 1);
-                character.setItem(item);
+                //character.setItem(item);
                 character.gainExp(10);
                 break;
             }
